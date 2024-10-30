@@ -8,6 +8,9 @@ export const Menu = () => {
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Services</a></li>
+            </ul>
+
+            <ul className={'right'}>
                 <li><a href="">Contact Me</a></li>
             </ul>
 
@@ -22,7 +25,7 @@ const StyledMenu = styled.nav`
         gap: 30px;
         list-style: none; /* Убираем маркеры списка */
     }
-
+    
     li a {
         color: rgba(255, 255, 255, 1);
         text-decoration: none;
