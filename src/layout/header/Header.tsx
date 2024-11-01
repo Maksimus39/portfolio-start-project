@@ -9,7 +9,6 @@ export const Header = () => {
 
             <Logo/>
             <Menu/>
-
         </StyledHeader>
     );
 };
