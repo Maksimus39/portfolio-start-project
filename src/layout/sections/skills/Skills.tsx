@@ -1,12 +1,11 @@
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import {SectionTitle} from "../../../components/SectionTitle";
 import {Skill} from "./skill/Skill";
 
 export const Skills = () => {
     return (
         <StyledSkills >
-            <SectionTitle>My skills</SectionTitle>
+
             <FlexWrapper justify={'space-between'}>
                 <Skill iconID={'reactSVG'} skillTitle={'React'}/>
                 <Skill iconID={'Redux-Toolkit'} skillTitle={'Redux-Toolkit'}/>
@@ -25,6 +24,5 @@ export const Skills = () => {
 const StyledSkills = styled.section`
     background-color: rgba(0, 0, 0, 1);
     min-height: 100vh;
-    
 `
 

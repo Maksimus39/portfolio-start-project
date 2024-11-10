@@ -4,13 +4,13 @@ import styled from "styled-components";
 export const Menu = () => {
     return (
         <StyledMenu>
-            <ul className={'center'}>
+            <ul className="center">
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Services</a></li>
             </ul>
 
-            <ul className={'right'}>
+            <ul className="right">
                 <li><a href="">Contact Me</a></li>
             </ul>
         </StyledMenu>
@@ -19,11 +19,10 @@ export const Menu = () => {
 
 const StyledMenu = styled.nav`
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 0 20px; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
     height: 60px;
-  
 
     ul {
         display: flex;
@@ -39,12 +38,11 @@ const StyledMenu = styled.nav`
         text-decoration: none;
     }
 
-    center {
+    .center {
         margin: 0 auto; /* Центрируем список */
-      
     }
 
-    right {
+    .right {
         margin-left: auto; /* Сдвигаем список вправо */
     }
 `;
