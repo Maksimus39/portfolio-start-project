@@ -6,7 +6,7 @@ import React from "react";
 import {Works} from "./layout/sections/works/works";
 import {Testimony} from "./layout/sections/testimony/Testimony";
 import {Contact} from "./layout/sections/contact/Contact";
-import {Footer} from "./layout/sections/footer/Footer";
+import {Footer} from "./layout/footer/Footer";
 
 
 function App() {

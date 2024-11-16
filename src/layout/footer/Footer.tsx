@@ -11,9 +11,9 @@ export const Footer = () => {
     );
 };
 
-const StyledFooter = styled.div`
+const StyledFooter = styled.footer`
     background-color: rgba(0, 0, 0, 1);
-    min-height: 100vh;
+    min-height: 20vh;
 `
 
 const StyledGreeting = styled.p`
@@ -26,7 +26,7 @@ const StyledGreeting = styled.p`
     color: rgba(255, 255, 255, 0.5);
 `
 
-const StyledName = styled.span`
+const StyledName = styled.small`
     color: rgba(255, 255, 255, 1);
     font-family: 'Poppins', sans-serif; /* Указываем шрифт Poppins */
     font-weight: 700; /* Жирность шрифта 700 (bold) */
