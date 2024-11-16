@@ -45,7 +45,7 @@ const Slide = styled.div`
 
 `
 
-const Text = styled.div`
+export const Text = styled.div`
     color: rgba(255, 255, 255, 1);
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
