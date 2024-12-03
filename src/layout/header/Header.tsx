@@ -7,13 +7,16 @@ import {theme} from "../../styles/Theme";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 
+
+const items = ['Home', 'About', 'Services']
+
 export const Header = () => {
     return (
         <StyledHeader>
             <Container>
                 <FlexWrapper justify={'space-between'} align={'center'}>
                     <Logo/>
-                    <Menu/>
+                    <Menu menuItems={items}/>
                     <ContactMe/>
                 </FlexWrapper>
             </Container>
@@ -23,6 +26,12 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     background-color: ${theme.colors.primaryBackground};
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
 `
 
 

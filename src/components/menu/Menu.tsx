@@ -2,37 +2,95 @@ import React from 'react';
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 
-export const Menu = () => {
+
+export const Menu = (props: { menuItems: Array<string> }) => {
     return (
-        <StyledMenu>
+        <StyledHeaderMenu>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
+                {props.menuItems.map((item, index) => {
+                    return <ListItem key={index}>
+                        <Link href="">
+                            {item}
+                            <Mask><span>{item}</span></Mask>
+                            <Mask><span>{item}</span></Mask>
+                        </Link>
+                    </ListItem>;
+                })}
             </ul>
-        </StyledMenu>
+        </StyledHeaderMenu>
     );
 };
 
-const StyledMenu = styled.nav`
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding: 0 20px;
-    height: 60px;
-
+const StyledHeaderMenu = styled.nav`
     ul {
         display: flex;
-        flex-direction: row;
         gap: 30px;
-        list-style: none;
-        margin: 0;
-        padding: 0;
         justify-content: center;
-        align-items: center;
+    }
+`
+
+
+const Link = styled.a`
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    color: transparent;
+`
+
+const Mask = styled.span`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    height: 50%;
+    overflow-y: hidden;
+    color: ${theme.colors.fontColor};
+
+    & + & {
+        top: 50%;
+
+        span {
+            display: inline-block;
+            transform: translateY(-50%);
+        }
+    }
+`
+
+const ListItem = styled.li`
+    position: relative;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        height: 3px;
+        background-color: ${theme.colors.accentColor};
+        position: absolute;
+        top: 50%;
+        left: -10px;
+        right: -10px;
+        z-index: 1;
+
+        transform: scale(0);
     }
 
-    li a {
-        color: ${theme.colors.fontColor}
+    &:hover {
+        &::before {
+            transform: scale(1)
+        }
+
+        ${Mask} {
+            transform: skewX(10deg) translateX(3px);
+            color: ${theme.colors.fontColor};
+
+            & + ${Mask} {
+                transform: skewX(10deg) translateX(-3px);
+            }
+        }
     }
+
 `
