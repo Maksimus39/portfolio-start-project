@@ -3,6 +3,7 @@ import portfolioImg from '../../../assets/images/portfolio_1.webp'
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Icon} from "../../../components/icon/Icon";
+import {theme} from "../../../styles/Theme";
 
 
 export const Main = () => {
@@ -33,8 +34,7 @@ export const Main = () => {
 };
 const StyledMain = styled.div`
     min-height: 100vh;
-    background-color: rgba(34, 42, 54, 0.95);
-
+    background-color: ${theme.colors.primaryBackground};
 `
 const Photo = styled.img`
     width: 721px;
@@ -42,21 +42,21 @@ const Photo = styled.img`
     object-fit: cover;
 `
 const ColorText = styled.h2`
-    color: rgba(255, 255, 255, 1);
+    color: ${theme.colors.fontColor};
 `
 
 const Button = styled.button`
     width: 203px;
     height: 64px;
     padding: 20px 40px;
-    background-color: rgba(103, 108, 219, 1);
+    background-color: ${theme.colors.accentColor};
     border: none;
 
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    color: rgba(255, 255, 255, 1);
+    color: ${theme.colors.fontColor};
 
 `
 
@@ -68,6 +68,6 @@ const LinkStyle = styled.a`
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    color: rgba(255, 255, 255, 1);
+    color: ${theme.colors.fontColor};
     margin-left: 10px;
 `

@@ -3,24 +3,26 @@ import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
 import {Menu} from "../../components/menu/Menu";
 import {ContactMe} from "../../components/contactMe/ContactMe";
+import {theme} from "../../styles/Theme";
+import {Container} from "../../components/Container";
+import {FlexWrapper} from "../../components/FlexWrapper";
 
 export const Header = () => {
     return (
         <StyledHeader>
-
-            <Logo/>
-            <Menu/>
-            <ContactMe/>
+            <Container>
+                <FlexWrapper justify={'space-between'} align={'center'}>
+                    <Logo/>
+                    <Menu/>
+                    <ContactMe/>
+                </FlexWrapper>
+            </Container>
         </StyledHeader>
     );
 };
 
 const StyledHeader = styled.header`
-    background-color: rgba(34, 42, 54, 0.95);
-    display: flex;
-    justify-content: space-between; /* Равномерно распределяет элементы по ширине контейнера */
-    align-items: center; /* Выравнивает элементы по вертикали */
-    padding: 0 20px; /* Добавляет отступы слева и справа */
+    background-color: ${theme.colors.primaryBackground};
 `
 
 

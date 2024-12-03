@@ -1,6 +1,7 @@
 import React from 'react';
 import {Icon} from "../../../../components/icon/Icon";
 import styled from "styled-components";
+import {theme} from "../../../../styles/Theme";
 
 type Props = {
     iconID: string
@@ -19,5 +20,5 @@ const StyledSkill = styled.div`
     width: 33%;
 `
 const SkillTitle = styled.h3`
-    color: rgba(255, 255, 255, 1);
+    color: ${theme.colors.fontColor};
 `

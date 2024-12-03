@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {Icon} from "../../../components/icon/Icon";
+import {theme} from "../../../styles/Theme";
 
 
 export const Works = () => {
@@ -44,22 +45,22 @@ export const Works = () => {
 };
 
 const StyledTestimony = styled.section`
-    background-color: rgba(34, 42, 54, 1);
+    background-color: ${theme.colors.primaryBackgroundSolid};
     min-height: 100vh;
 `
 const SectionTitle = styled.h2`
     text-align: center;
-    color: rgba(255, 255, 255, 1)
+    color: ${theme.colors.fontColor};
 `
 const ExperienceDevelopment = styled.h2`
     width: 133px;
     height: 120px;
-    color: rgba(103, 108, 219, 1);
+    color: ${theme.colors.accentColor};
 `
 const SectionParagraph = styled.h2`
     width: 207px;
     height: 216px;
-    color: rgba(255, 255, 255, 1);
+    color: ${theme.colors.fontColor};
 `
 const Specialization = styled.section`
     display: flex;
@@ -69,10 +70,10 @@ const Specialization = styled.section`
 const SectionBlock = styled.div`
     width: 288px;
     height: 295px;
-    background: rgba(103, 108, 219, 1);
+    background: ${theme.colors.accentColor};
 `
 const SectionBlock2 = styled.div`
     width: 288px;
     height: 295px;
-    background: rgba(196, 196, 196, 1);
+    background: ${theme.colors.blockColor};
 `

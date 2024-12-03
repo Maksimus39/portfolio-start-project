@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../styles/Theme";
 
 export const Menu = () => {
     return (
@@ -32,7 +33,6 @@ const StyledMenu = styled.nav`
     }
 
     li a {
-        color: rgba(255, 255, 255, 1);
-        text-decoration: none;
+        color: ${theme.colors.fontColor}
     }
 `

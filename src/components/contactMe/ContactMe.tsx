@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import {theme} from "../../styles/Theme";
 
 
 export const ContactMe = () => {
@@ -19,7 +20,7 @@ const StyledMenu = styled.nav`
     padding: 0 20px;
     width: 157px;
     height: 50px;
-    background: rgba(103, 108, 219, 1);
+    background: ${theme.colors.accentColor};
     justify-content: center;
 
     ul {
@@ -29,11 +30,10 @@ const StyledMenu = styled.nav`
         list-style: none;
         margin: 0;
         padding: 0;
-     
+
     }
 
     li a {
-        color: rgba(255, 255, 255, 1);
-        text-decoration: none;
+        color: ${theme.colors.fontColor};
     }
 `

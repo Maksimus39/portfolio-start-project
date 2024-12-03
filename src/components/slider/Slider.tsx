@@ -3,6 +3,7 @@ import styled from "styled-components";
 import clientImg from '../../assets/images/clientImg.webp'
 import {WorkProgress} from "../workProgress/WorkProgress";
 import {FlexWrapper} from "../FlexWrapper";
+import {theme} from "../../styles/Theme";
 
 
 export const Slider = () => {
@@ -46,7 +47,7 @@ const Slide = styled.div`
 `
 
 export const Text = styled.div`
-    color: rgba(255, 255, 255, 1);
+    color: ${theme.colors.fontColor};
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 20px;

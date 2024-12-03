@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Skill} from "./skill/Skill";
+import {theme} from "../../../styles/Theme";
 
 export const Skills = () => {
     return (
-        <StyledSkills >
+        <StyledSkills>
 
             <FlexWrapper justify={'space-between'}>
                 <Skill iconID={'reactSVG'} skillTitle={'React'}/>
@@ -22,7 +23,7 @@ export const Skills = () => {
 }
 
 const StyledSkills = styled.section`
-    background-color: rgba(0, 0, 0, 1);
+    background-color: ${theme.colors.secondaryBackground};
     min-height: 100vh;
 `
 
