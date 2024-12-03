@@ -19,8 +19,18 @@ export const Skill = ({iconID, skillTitle}: Props) => {
 
 const StyledSkill = styled.div`
     width: 33%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
 const SkillTitle = styled.h3`
     color: ${theme.colors.fontColor};
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 20px;
 `;

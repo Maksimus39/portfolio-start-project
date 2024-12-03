@@ -17,18 +17,22 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
-    
-    a{
+
+    a {
         text-decoration: none;
     }
-    
+
     ul {
         list-style: none;
     }
-    
+
     button {
         background-color: unset;
         border: none;
+    }
+
+    section {
+        padding: 100px 0;
     }
 `
 

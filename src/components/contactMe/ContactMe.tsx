@@ -34,6 +34,5 @@ const StyledMenu = styled.nav`
 
     li a {
         color: ${theme.colors.fontColor};
-      
     }
 `
