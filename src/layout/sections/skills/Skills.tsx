@@ -3,20 +3,18 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Skill} from "./skill/Skill";
 import {theme} from "../../../styles/Theme";
 
+const iconID = ['reactSVG', 'Redux-Toolkit', 'JS', 'TS', 'HTML5', 'CSS', 'styled-component', 'materialUI', 'git']
+const skillTitle = ['React', 'Redux-Toolkit', 'Java-Script', 'Type-Script', 'HTML 5', 'CSS', 'Styled component', 'materialUI', 'Git']
+
+
 export const Skills = () => {
     return (
         <StyledSkills>
 
             <FlexWrapper justify={'space-between'}>
-                <Skill iconID={'reactSVG'} skillTitle={'React'}/>
-                <Skill iconID={'Redux-Toolkit'} skillTitle={'Redux-Toolkit'}/>
-                <Skill iconID={'JS'} skillTitle={'Java-Script'}/>
-                <Skill iconID={'TS'} skillTitle={'Type-Script'}/>
-                <Skill iconID={'HTML5'} skillTitle={'HTML 5 '}/>
-                <Skill iconID={'CSS'} skillTitle={'CSS'}/>
-                <Skill iconID={'styled-component'} skillTitle={'Styled component'}/>
-                <Skill iconID={'materialUI'} skillTitle={'materialUI'}/>
-                <Skill iconID={'git'} skillTitle={'Git'}/>
+                {iconID.map((id, index) => (
+                    <Skill key={index} iconID={id} skillTitle={skillTitle[index]} />
+                ))}
             </FlexWrapper>
         </StyledSkills>
     )
