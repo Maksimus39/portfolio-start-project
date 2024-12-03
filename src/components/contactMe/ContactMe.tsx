@@ -30,10 +30,10 @@ const StyledMenu = styled.nav`
         list-style: none;
         margin: 0;
         padding: 0;
-
     }
 
     li a {
         color: ${theme.colors.fontColor};
+      
     }
 `
