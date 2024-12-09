@@ -104,6 +104,7 @@ const SectionTitle = styled.h2`
     color: ${theme.colors.fontColor};
     align-items: center;
     display: flex;
+    margin-bottom: 5px; // Установите расстояние между заголовком и иконкой
 `
 const Specialization = styled.section`
     display: flex;
@@ -116,6 +117,8 @@ const SectionBlock = styled.div`
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
+    padding: 20px; // Добавьте отступы, если необходимо
+    margin: 0;
 `
 const SectionBlock2 = styled.div`
     width: 288px;
@@ -124,4 +127,6 @@ const SectionBlock2 = styled.div`
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
+    padding: 20px; // Добавьте отступы, если необходимо
+    margin: 0;
 `
